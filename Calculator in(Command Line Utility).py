@@ -28,5 +28,6 @@ if __name__ == '__main__':
     parser.add_argument('--y', type=float, default=1.0, help="This will take the second number for more info "
                                                            "contact Shivam")
     args = parser.parse_args()
-    sys.stdout.write("Your answer - ")
+    
+    sys.stdout.write(f'Your operator - {args.o}, Your First Number - {args.x}, Your Second Number - {args.y}, 'f'Your Answer - ')
     sys.stdout.write(str(calc(args)))
